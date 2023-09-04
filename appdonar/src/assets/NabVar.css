@@ -1,1 +1,53 @@
-.container {margin: 0%;}
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #007b5e; /* Color de fondo similar al de Greenpeace */
+    padding: 10px 0;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff; /* Color del icono de menú en dispositivos móviles */
+  }
+  
+  .navbar-brand {
+    margin-right: 30px;
+  }
+  
+  .navbar-brand img {
+    max-height: 60px;
+  }
+  
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+  
+  .navbar-nav {
+    font-weight: bold;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 20px;
+  }
+  
+  .navbar-nav .nav-link {
+    color: #fff; /* Color del texto de los enlaces */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #ffd700; /* Color al pasar el mouse similar al de Greenpeace */
+  }
+  
+  /* Estilos para el botón "DONÁ AHORA" */
+  .btn-donate {
+    background-color: #007b5e; /* Color de fondo similar al de Greenpeace */
+    color: #fff; /* Color del texto del botón */
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase; /* Mayúsculas similar a Greenpeace */
+  }
+  
+  .btn-donate:hover {
+    background-color: #009c78; /* Cambia el color de fondo al pasar el mouse */
+    color: #fff; /* Cambia el color del texto al pasar el mouse */
+  }
+  

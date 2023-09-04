@@ -1,33 +1,65 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './NabVar.css';
+import './opa.png';
 
-export default function NabVar ()
-{
-    return (
-    <>
-    <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
-        <Container>
-            <Navbar.Brand href="#home">
-                <img alt="" src="./opa.png" width="30" height="30"/>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="me-auto">
-                    <Nav.Link href="#">Inicio</Nav.Link>
-                    <Nav.Link href="#">Donaciones</Nav.Link>
-                    <Nav.Link href="#">Contactanos✉️</Nav.Link>
-                    <NavDropdown title="Sobre Nosotros" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Actividades</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Quienes Somos</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Objetivos</NavDropdown.Item>
-                    </NavDropdown>
-                </Nav>
-            </Navbar.Collapse>
-        </Container>
-    </Navbar> 
-    </>        
-    );
+function Navbar() {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container">
+        <NavLink className="navbar-brand" to="/">
+          <img
+            src="./opa.png"
+            alt=""
+            width="120"
+          />
+        </NavLink>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/campaigns">
+                Campañas
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/learn-more">
+                Informate
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/get-involved">
+                Participá
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/about-us">
+                Conocenos
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="d-none d-lg-flex">
+          <a
+            className="btn btn-donate"
+            href=""
+          >
+            DONÁ AHORA
+          </a>
+        </div>
+      </div>
+    </nav>
+  );
 }
+
+export default Navbar;
