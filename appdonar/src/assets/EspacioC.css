@@ -1,0 +1,17 @@
+/* Estilo para el fondo semitransparente que ocupa toda la caption */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  padding: 10px; /* Espaciado interior del fondo */
+  color: white; /* Color del texto */
+  border-radius: 5px; /* Bordes redondeados para el fondo */
+  position: absolute; /* Posicionamiento absoluto para cubrir toda la caption */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Estilo para el texto de la caption */
+.carousel-caption h3, .carousel-caption p {
+  text-align: center; /* Alineación del texto al centro */
+}
