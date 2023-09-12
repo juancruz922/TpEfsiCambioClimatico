@@ -6,13 +6,13 @@ import './EspacioC.css';
 
 const CustomCarousel = () => {
   return (
-    <div className="container-sm">
-      {/* Contenedor fluido para que se ajuste automáticamente */}
+    <div className="container-sm" id='carrousel'>
+      {}
       <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://conceptodefinicion.de/wp-content/uploads/2020/09/Ecologia.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Bow_Lake_beim_Icefields_Parkway.jpg"
             alt="Slide 1"
           />
           <div className="carousel-caption text-center custom-caption">
@@ -24,7 +24,7 @@ const CustomCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://www.smartyeventos.es/pic/actividades-online-para-empresas/actividad-medioambiental-online/actividad-salud-bienestar.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Bow_Lake_beim_Icefields_Parkway.jpg"
             alt="Slide 2"
           />
           <div className="carousel-caption text-center custom-caption">
@@ -36,7 +36,7 @@ const CustomCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="imagen3.jpg"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Bow_Lake_beim_Icefields_Parkway.jpg"
             alt="Slide 3"
           />
           <div className="carousel-caption text-center custom-caption">

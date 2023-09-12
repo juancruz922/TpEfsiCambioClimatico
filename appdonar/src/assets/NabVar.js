@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './NabVar.css';
 import './opa.png';
 
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -52,7 +53,7 @@ function Navbar() {
         <div className="d-none d-lg-flex">
           <a
             className="btn btn-donate"
-            href=""
+            href="/donar" 
           >
             DONÁ AHORA
           </a>
