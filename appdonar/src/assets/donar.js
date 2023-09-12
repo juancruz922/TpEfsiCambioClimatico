@@ -9,7 +9,11 @@ function DonationPage() {
   };
 
   const handleDonate = () => {
-    setShowModal(true);
+    if (amount === 0) {
+      alert('Por favor, ingresa una cantidad mayor que 0 para donar.');
+    } else {
+      setShowModal(true);
+    }
   };
 
   const closeModal = () => {
@@ -42,7 +46,7 @@ function DonationPage() {
                 </div>
                 <div className="modal-body">
                   <p style={{ color: 'green' }}>Hemos recibido tu donación de ${amount}.</p>
-                  <p style={{ color: 'blue' }}>Tu contribución ayudará a preservar la naturaleza.</p> {/* Cambiado el color a azul */}
+                  <p style={{ color: 'blue' }}>Tu contribución ayudará a preservar la naturaleza.</p>
                 </div>
                 <div className="modal-footer">
                   <button type="button" className="btn btn-secondary" onClick={closeModal}>Cerrar</button>

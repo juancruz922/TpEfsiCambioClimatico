@@ -1,0 +1,44 @@
+.data-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0ead6; /* Marrón claro */
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    color: #228b22; /* Verde claro */
+  }
+  
+  .label {
+    color: #1e90ff; /* Celeste */
+  }
+  
+  .data-form {
+    background-color: #ffffff; /* Blanco */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .btn {
+    background-color: #228b22; /* Verde claro */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #1e8c1e; /* Verde más oscuro al pasar el mouse */
+  }
+  

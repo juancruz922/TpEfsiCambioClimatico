@@ -34,7 +34,7 @@ function Navbar() {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/learn-more">
+              <NavLink className="nav-link" to="/info">
                 Informate
               </NavLink>
             </li>
@@ -53,7 +53,7 @@ function Navbar() {
         <div className="d-none d-lg-flex">
           <a
             className="btn btn-donate"
-            href="/donar" 
+            href="/datos" 
           >
             DONÁ AHORA
           </a>
