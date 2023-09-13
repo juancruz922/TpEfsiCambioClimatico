@@ -6,23 +6,23 @@ function DataForm({ onNext }) {
   const [cardNumber, setCardNumber] = useState('');
 
   const handleNext = () => {
-    // Validar los datos aquí si es necesario antes de continuar
+   
     if (!name || !phone || !cardNumber) {
       alert('Por favor, complete todos los campos.');
     } else {
-      // Redirige a la página de donación si todos los campos están completos
+     
       window.location.href = '/donar';
     }
   };
 
   const handlePhoneChange = (e) => {
-    // Usar una expresión regular para permitir solo números
-    const phoneNumber = e.target.value.replace(/\D/g, '');
+    
+   const phoneNumber = e.target.value.replace(/\D/g, '');
     setPhone(phoneNumber);
   };
 
   const handleCardNumberChange = (e) => {
-    // Usar una expresión regular para permitir solo números
+    
     const cardNumberValue = e.target.value.replace(/\D/g, '');
     setCardNumber(cardNumberValue);
   };
@@ -35,7 +35,7 @@ function DataForm({ onNext }) {
         alignItems: 'center',
         justifyContent: 'center',
         height: '100vh',
-        backgroundColor: '#d3ffd3', // Verde claro
+        backgroundColor: '#d3ffd3', 
         fontFamily: 'Arial, sans-serif',
       }}
       className="data-form-container"
@@ -43,7 +43,7 @@ function DataForm({ onNext }) {
       <h2 style={{ color: '#228b22' }}>Ingresa tus datos personales</h2>
       <form
         style={{
-          backgroundColor: '#fff8dc', // Marrón clarito
+          backgroundColor: '#fff8dc', 
           padding: '20px',
           borderRadius: '8px',
           boxShadow: '0 0 10px rgba(0, 0, 0, 0.2)',
@@ -57,7 +57,7 @@ function DataForm({ onNext }) {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            style={{ backgroundColor: '#fff' }} // Fondo blanco
+            style={{ backgroundColor: '#fff' }} 
           />
         </div>
         <div style={{ marginBottom: '15px' }}>
@@ -66,7 +66,7 @@ function DataForm({ onNext }) {
             type="tel"
             value={phone}
             onChange={handlePhoneChange}
-            style={{ backgroundColor: '#fff' }} // Fondo blanco
+            style={{ backgroundColor: '#fff' }} 
           />
         </div>
         <div style={{ marginBottom: '15px' }}>
@@ -75,13 +75,13 @@ function DataForm({ onNext }) {
             type="text"
             value={cardNumber}
             onChange={handleCardNumberChange}
-            style={{ backgroundColor: '#fff' }} // Fondo blanco
+            style={{ backgroundColor: '#fff' }} 
           />
         </div>
         <button
           type="button"
           style={{
-            backgroundColor: '#228b22', // Verde claro
+            backgroundColor: '#228b22', 
             color: '#fff',
             padding: '10px 20px',
             border: 'none',

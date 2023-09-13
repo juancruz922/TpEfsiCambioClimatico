@@ -12,7 +12,7 @@ const CustomCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Bow_Lake_beim_Icefields_Parkway.jpg"
+            src="https://www.iberdrola.com/documents/20125/42055/Educacion_Cambio_Climatico_746x419.jpg/a57fcb45-6975-5ac1-9c19-50348c7fb77a?t=1630469247417"
             alt="Slide 1"
           />
           <div className="carousel-caption text-center custom-caption">
@@ -24,7 +24,7 @@ const CustomCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Bow_Lake_beim_Icefields_Parkway.jpg"
+            src="https://humanidades.com/wp-content/uploads/2017/04/investigacion-cientifica-5-e1568166670621.jpg"
             alt="Slide 2"
           />
           <div className="carousel-caption text-center custom-caption">
@@ -36,7 +36,7 @@ const CustomCarousel = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Bow_Lake_beim_Icefields_Parkway.jpg"
+            src="https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/latin-america/Brasil30-es.jpg?crop=0%2C283%2C4000%2C2100&wid=1200&hei=630&scl=3.3333333333333335"
             alt="Slide 3"
           />
           <div className="carousel-caption text-center custom-caption">
@@ -45,6 +45,8 @@ const CustomCarousel = () => {
           </div>
         </Carousel.Item>
       </Carousel>
+
+
     </div>
   );
 };

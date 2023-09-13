@@ -29,17 +29,17 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/campaigns">
+              <NavLink className="nav-link" to="/">
                 Campañas
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/info">
+              <NavLink className="nav-link" to="/">
                 Informate
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/get-involved">
+              <NavLink className="nav-link" to="/">
                 Participá
               </NavLink>
             </li>
