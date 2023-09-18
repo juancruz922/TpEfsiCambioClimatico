@@ -1,19 +1,18 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import './NabVar.css';
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
 
-
-function Navbar() {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+const Layout = () => {
+    return (
+    <React.Fragment>
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container">
-        <NavLink className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/">
           <img
             src=""
             alt=""
             width="120"
           />
-        </NavLink>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -28,24 +27,24 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">
+              <Link className="nav-link" to="/">
                 Campañas
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">
+              <Link className="nav-link" to="/">
                 Informate
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">
+              <Link className="nav-link" to="/">
                 Participá
-              </NavLink>
+              </Link>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about-us">
+              <Link className="nav-link" to="/about-us">
                 Conocenos
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </div>
@@ -59,7 +58,8 @@ function Navbar() {
         </div>
       </div>
     </nav>
-  );
+        <Outlet />
+    </React.Fragment>)
 }
 
-export default Navbar;
+export default Layout

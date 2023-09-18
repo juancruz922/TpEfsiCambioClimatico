@@ -18,6 +18,7 @@ function DonationPage() {
 
   const closeModal = () => {
     setShowModal(false);
+    window.location.href = '/';
   };
 
   return (
@@ -49,7 +50,7 @@ function DonationPage() {
                   <p style={{ color: 'blue' }}>Tu contribución ayudará a preservar la naturaleza.</p>
                 </div>
                 <div className="modal-footer">
-                  <button type="button" className="btn btn-secondary" onClick={closeModal}>Cerrar</button>
+                  <button type="button" className="btn btn-secondary" onClick={closeModal} href="/">Cerrar</button>
                 </div>
               </div>
             </div>
